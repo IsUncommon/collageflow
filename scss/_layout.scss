@@ -1,0 +1,30 @@
+header {
+  display: block;
+  background: $primary-color;
+
+  padding: 40px;
+
+  h1,
+  h2 {
+    color: white;
+  }
+}
+
+.phone {
+  display: block;
+  background: black;
+  color: white;
+  width: 275px;
+  height: 554px;
+}
+
+.beta-link {
+  display: block;
+  background: $primary-color;
+  color: white;
+  width: auto;
+  padding: 12px;
+  font-size: 30px;
+  font-weight: 100;
+  text-decoration: none;
+}
