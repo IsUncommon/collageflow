@@ -1,0 +1,12 @@
+@include border-box-sizing;
+
+$susy: (
+  columns: 8,
+  gutters: 1/4,
+  column-width: 5
+);
+
+.container {
+  @include container(960px);
+  // @include show-grid(overlay);
+}
