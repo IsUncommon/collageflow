@@ -2,7 +2,7 @@ header {
   display: block;
   background: $primary-color;
 
-  padding: 120px 0 60px 0;
+  padding: 150px 0 75px 0;
 
   h1,
   h2 {
@@ -18,7 +18,7 @@ header {
   display: block;
   color: white;
   float: right;
-  margin-top: -200px;
+  margin-top: -250px;
   @include span(last 4);
 
   .image {
@@ -26,6 +26,22 @@ header {
     height: 600px;
     margin: 0 auto;
     background: transparent url('../images/nexus.svg') no-repeat center center;
+  }
+
+  .video {
+    position: relative;
+    width: 270px;
+    height: 480px;
+    background: white;
+    margin: -535px auto 0 auto;
+
+    video {
+      position: absolute;
+      top: 0;
+      height: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -36,11 +52,42 @@ header {
 
   a {
     display: inline-block;
-    padding: 12px;
+    padding: 12px 40px 12px 24px;
     font-size: 30px;
     font-weight: 100;
     text-decoration: none;
     background: $primary-color;
     color: white;
+    position: relative;
+
+    &:before, &:after {
+      content: " ";
+      position: absolute;
+      display: block;
+      top: 50%;
+    }
+
+    &:before {
+      right: -20px;
+      margin-top: -20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background: white;
+
+      box-shadow: 0 0 10px 0 $gray-light;
+    }
+
+    &:after {
+      right: -6px;
+      margin-top: -8px;
+      width: 16px;
+      height: 16px;
+      border: solid 4px $gray-light;
+      border-left: transparent;
+      border-bottom: transparent;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
   }
 }
