@@ -12,6 +12,19 @@ header {
 
     @include span(4);
   }
+
+  h1 {
+    position: relative;
+
+    em {
+      position: absolute;
+      margin: 10px 0 0 5px;
+      font-weight: 300;
+      font-size: 16px;
+      font-style: normal;
+      color: rgba(white, 0.5);
+    }
+  }
 }
 
 .phone {
@@ -48,7 +61,22 @@ header {
 .signup {
   @include span(4);
   text-align: center;
-  margin-top: 120px;
+
+  ul {
+    margin: 50px 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    color: $gray-light;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-transform: lowercase;
+  }
 
   a {
     display: inline-block;
