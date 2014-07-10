@@ -7,6 +7,6 @@ $susy: (
 );
 
 .container {
-  @include container(960px);
+  @include container(840px);
   // @include show-grid(overlay);
 }
