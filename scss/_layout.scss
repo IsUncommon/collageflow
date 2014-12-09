@@ -1,8 +1,9 @@
 header {
   display: block;
-  background: $primary-color;
-
-  padding: 150px 0 50px 0;
+  background: $primary-color url(../images/feature-graphic.jpg) no-repeat center center;
+  height: 0;
+  padding: 25% 0 0 0;
+  background-size: 100% auto;
 
   h1,
   h2 {
@@ -29,7 +30,7 @@ header {
 
 .phone {
   display: block;
-  color: white;
+  color: $black;
   float: right;
   margin-top: -180px;
   @include span(4);
@@ -39,7 +40,7 @@ header {
     position: relative;
     height: 600px;
     margin: 0 auto;
-    background: $white;
+    background: $black;
     box-shadow: 0 0 10px rgba(black, 0.3);
     border-radius: 200px 200px / 20px 20px;
 
