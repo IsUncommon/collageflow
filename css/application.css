@@ -382,7 +382,7 @@ h2 {
 
 header {
   display: block;
-  background: #582E66 url(../images/feature-graphic.jpg) no-repeat center center;
+  background: #C35466 url(../images/feature-graphic.jpg) no-repeat center center;
   height: 0;
   padding: 25% 0 0 0;
   background-size: 100% auto; }
@@ -406,10 +406,9 @@ header {
 
 .phone {
   display: block;
-  color: black;
   float: right;
   margin-top: -180px;
-  width: 48.71795%;
+  width: 42.30769%;
   float: left;
   margin-right: 2.5641%; }
   .phone .image {
@@ -417,7 +416,7 @@ header {
     position: relative;
     height: 600px;
     margin: 0 auto;
-    background: black;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 200px 200px / 20px 20px; }
     .phone .image:before, .phone .image:after {
@@ -467,38 +466,27 @@ header {
     font-size: 22px;
     line-height: 1.5em;
     text-transform: lowercase; }
-  .signup a {
+  .signup a.play-store {
+    display: block; }
+  .signup a.community {
     display: inline-block;
-    padding: 12px 80px 12px 24px;
-    font-size: 30px;
-    font-weight: 100;
+    border: solid 1px #ccc;
+    padding: 4px;
+    border-radius: 6px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 32px;
     text-decoration: none;
-    background: #582E66;
-    color: white;
-    position: relative; }
-    .signup a:before, .signup a:after {
-      content: " ";
-      position: absolute;
+    background: black; }
+    .signup a.community img {
       display: block;
-      top: 50%; }
-    .signup a:before {
-      right: 20px;
-      margin-top: -20px;
-      width: 40px;
-      height: 40px;
-      border-radius: 20px;
-      background: white;
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); }
-    .signup a:after {
-      right: 34px;
-      margin-top: -8px;
-      width: 16px;
-      height: 16px;
-      border: solid 4px rgba(0, 0, 0, 0.4);
-      border-left: transparent;
-      border-bottom: transparent;
-      -webkit-transform: rotate(45deg);
-      transform: rotate(45deg); }
+      float: left; }
+    .signup a.community span {
+      display: inline-block;
+      padding: 0 6px 0 4px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: white; }
   .signup p em {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.4); }
